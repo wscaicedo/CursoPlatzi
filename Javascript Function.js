@@ -6,7 +6,7 @@ function seconLangestNumber(numbers) {
             second = primer;
             primer = numbers[i]
         }
-        if (numbers[i] > second && numbers[i] < primer){
+        if (numbers[i] > second && numbers[i] < primer) {
             second = numbers[i];
         }
     }
