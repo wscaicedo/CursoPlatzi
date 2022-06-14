@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Programa inicial de como calcular peso en otro planeta -->
+<!--
+<html>
+    <head>
+        <title>Tu peso en otros planetas</title>
+    </head>
+    <body>
+        <h1>Tu peso en otros planetas</h1>
+        <p>En la tierra pesas distinto que en Marte o Jupiter</p>
+        <script>
+            var ususario = prompt("Cual es tu peso?");
+            var peso = parseFloat(ususario);
+            var g_tierra = 9.8;
+            var g_marte = 3.7;
+            var g_jupiter = 24.8;
+            var peso_final;
+            peso_final = peso * g_marte / g_tierra;
+            peso_final = parseFloat(peso_final);
+            document.write("Tu peso en marte es <strong>" + peso_final + " Kilos</strong>");
+        </script>
+    </body>
+</html>
+-->
+
+<!-- Calcular el peso en otro planeta usando Flujo y Condicionales -->
+<html>
+    <head>
+        <title>Tu peso en otros planetas</title>
+    </head>
+    <body>
+        <h1>Tu peso en otros planetas</h1>
+        <p>En la tierra pesas distinto que en Marte o Jupiter</p>
+        <script>
+            var ususario = prompt("Cual es tu peso?");
+            var planeta = parseInt(prompt("Elige tu planeta\n1 es Marte, 2. es Jupiter"));
+            var peso = parseInt(ususario);
+            var g_tierra = 9.8;
+            var g_marte = 3.7;
+            var g_jupiter = 24.8;
+            var peso_final;
+            if (planeta == 1)
+            {
+                peso_final = parseInt(peso * g_marte / g_tierra);                
+                document.write("Tu peso en marte es de <strong>" + peso_final + " Kilos</strong>");
+            }
+            else if (planeta == 2)
+            {
+                peso_final = parseInt(peso * g_jupiter / g_tierra);
+                document.write("Tu peso en Jupiter es de <strong>" + peso_final + " Kilos</strong>");
+            }
+            else
+            {
+                peso_final = 10000000;
+                document.write("Tu peso en Kricton es de <strong>" + peso_final + " Kilos</strong>");
+            }
+            
+            peso_final = parseInt(peso_final); 
+            
+        </script>
+    </body>
+</html>
