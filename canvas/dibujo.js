@@ -1,8 +1,35 @@
 var d = document.getElementById("dibujito");
 var lienzo = d.getContext("2d");
+var lineas = 30;
+var l = 0;
+var xf, yi; 
 
-dibujarLinea("blue", 200, 300, 25, 98)
-dibujarLinea("green", 56, 78, 250, 200)
+// while (l < lineas)
+//{
+//	yi = 10 * l;
+//	xf = 10 * (l +1);
+//	dibujarLinea("blue", xf, 0, 300, yi);
+//	dibujarLinea("blue", 0, xf, yi, 300);
+//	l = l + 1;
+//}
+
+//for(l = 0; l < lineas; l++)
+//{
+//	yi = 10 * l;
+//	xf = 10 * (l +1);
+//	dibujarLinea("blue", xf, 0, 300, yi);
+//	dibujarLinea("blue", 0, xf, yi, 300);
+//}
+
+do 
+{
+	yi = 10 * l;
+	xf = 10 * (l +1);
+	dibujarLinea("blue", xf, 0, 300, yi);
+	dibujarLinea("blue", 0, xf, yi, 300);
+	l = l + 1;
+}
+while(l < lineas);
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
 {
